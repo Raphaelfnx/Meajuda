@@ -38,15 +38,17 @@ body {
 
 #hand, #can {
   position: absolute;
-  width: 5px;
-  height: auto;
+  width: 40px;         /* ajuste forte de tamanho */
+  height: 40px;
   pointer-events: none;
+  object-fit: contain; /* para evitar distorção */
 }
 
 
 #can {
   transition: top 0.2s, left 0.2s;
 }
+
 
 
 
