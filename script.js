@@ -28,7 +28,7 @@ function checkProximity(x, y) {
     y - (canRect.top + canRect.height / 2)
   );
 
-  if (distance < 120) {
+  if (distance < 150) {
     moveCan();
   }
 }
@@ -47,3 +47,4 @@ document.addEventListener("touchmove", (e) => {
   hand.style.top = `${touch.clientY - 40}px`;
   checkProximity(touch.clientX, touch.clientY);
 });
+
